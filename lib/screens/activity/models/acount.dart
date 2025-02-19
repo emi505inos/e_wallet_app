@@ -6,7 +6,7 @@ Acount ({
 required this.money
 });
 static final empty = Acount(
-  money: 1
+  money: 0
   );
   
 }

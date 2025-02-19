@@ -6,12 +6,12 @@ List<PieChartSectionData> pieChartSectionData = [
     value: 58,
     showTitle: false,
     
-    color: Colors.deepOrange
+    color:  Colors.deepPurple[800]
   ),
   PieChartSectionData(
     value: 42,
     showTitle: false,
     
-    color: Colors.deepPurple[800]
+    color: Colors.deepOrange
   ),
 ];

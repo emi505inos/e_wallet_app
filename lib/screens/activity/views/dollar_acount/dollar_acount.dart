@@ -1,12 +1,12 @@
 import 'package:e_wallet_app/screens/activity/views/acount_view.dart';
+import 'package:e_wallet_app/screens/activity/views/dollar_acount/views/dollar_center_body_view.dart';
+import 'package:e_wallet_app/screens/activity/views/dollar_acount/views/dollar_top_body_view.dart';
+import 'package:e_wallet_app/screens/widgets/custome_navigation_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/custome_navigation_bar.dart';
-import 'views/pesos_acount/views/pesos_center_body_view.dart';
-import 'views/pesos_acount/views/pesos_top_body_view.dart';
-
-class ActivityScreen extends StatelessWidget {
-  const ActivityScreen({super.key});
+class DollarAcount extends StatelessWidget {
+  const DollarAcount({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +18,8 @@ class ActivityScreen extends StatelessWidget {
           child: Column(
             children: [
               AcountView(),
-              PesosTopBodyView(),
-              PesosCenterBodyView(),
+              DollarTopBodyView(),
+              DollarCenterBodyView()
             ],
 
           ),
@@ -27,6 +27,6 @@ class ActivityScreen extends StatelessWidget {
       ),
       
       bottomNavigationBar: CustomeNavigationBar(),
-    );
+    );  
   }
 }

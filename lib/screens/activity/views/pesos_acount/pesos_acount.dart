@@ -1,12 +1,13 @@
-import 'package:e_wallet_app/screens/activity/views/acount_view.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/custome_navigation_bar.dart';
-import 'views/pesos_acount/views/pesos_center_body_view.dart';
-import 'views/pesos_acount/views/pesos_top_body_view.dart';
+import '../../../widgets/custome_navigation_bar.dart';
+import '../acount_view.dart';
+import 'views/pesos_center_body_view.dart';
+import 'views/pesos_top_body_view.dart';
 
-class ActivityScreen extends StatelessWidget {
-  const ActivityScreen({super.key});
+class PesosAcount extends StatelessWidget {
+  const PesosAcount({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,26 +1,18 @@
-import 'package:e_wallet_app/screens/activity/models/acount.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class TopBodyView extends StatefulWidget {
-  const TopBodyView({super.key});
+class PesosTopBodyView extends StatefulWidget {
+  const PesosTopBodyView({super.key});
 
   @override
-  State<TopBodyView> createState() => _TopBodyViewState();
+  State<PesosTopBodyView> createState() => _PesosTopBodyViewState();
 }
 
- class _TopBodyViewState extends State<TopBodyView> {
-  late Acount acount;
+ class _PesosTopBodyViewState extends State<PesosTopBodyView> {
   bool _isSlash = true;
   String _displayText = '13.021';
-  
 
-  @override
-  void initState() {
-    super.initState();
-    acount = Acount.empty;
-  }
   void _toglleIcon() {
       setState(() {
         _isSlash = !_isSlash;
@@ -35,105 +27,10 @@ class TopBodyView extends StatefulWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 30,),
         Padding(
           padding: const EdgeInsets.all(10),
           child: Column(
             children: [
-              
-              Row(
-                children: [
-                  Text(
-                    'Tu cuenta',
-                    style: TextStyle(
-                    color: Color.fromRGBO(39, 37, 37, 1),
-                    fontWeight: FontWeight.w800,
-                    fontSize: 35
-                    ),
-                  )
-                ],
-              ),
-              SizedBox(height: 20,),
-              Ink(
-                height: 60,
-                width: 400,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(60),
-                  color: Colors.white,
-                  boxShadow: [
-                      BoxShadow(
-                        blurRadius: 10,
-                        color: Colors.grey.withValues(alpha: 0.8),
-                        spreadRadius: 1,
-                      )
-                    ],
-                ),
-                child: Row(
-                  children: [
-                    InkWell(
-                      borderRadius: BorderRadius.circular(30),
-                      onTap: () {
-                        setState(() {
-                          acount.money= 0;
-                        });
-                      },
-                      child: Ink(
-                        width: 200,
-                        height: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(30),
-                          color: acount.money == 0
-                              ? Colors.deepPurple[800]
-                              : Colors.white,
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Pesos',
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w400,
-                              color:acount.money == 0
-                              ? Colors.white
-                              : Colors.deepPurple[800]
-                            ),
-                            
-                          ),
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      borderRadius: BorderRadius.circular(30),
-                      onTap: () {
-                        setState(() {
-                          acount.money= 1 ;
-                        });
-                      },
-                      child: Ink(
-                        width: 200,
-                        height: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(30),
-                          color: acount.money == 1
-                              ? Colors.deepPurple[800]
-                              : Colors.white,
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Dolares',
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w400,
-                              color:acount.money == 1
-                              ? Colors.white
-                              : Colors.deepPurple[800]
-                            ), 
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               SizedBox(height: 20,),
               Container(
                 height: 230,

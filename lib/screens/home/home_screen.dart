@@ -7,8 +7,10 @@ import 'package:e_wallet_app/screens/home/views/shortcuts_view.dart';
 import 'package:e_wallet_app/screens/widgets/custome_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:provider/provider.dart';
 
 import '../auth/blocs/sign_in_bloc/sign_in_bloc.dart';
+import '../widgets/navigator_bar_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key,});
@@ -36,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      bottomNavigationBar: CustomeNavigationBar(),
+      bottomNavigationBar:  CustomeNavigationBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(10),
