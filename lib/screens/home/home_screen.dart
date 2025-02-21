@@ -10,7 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 
 import '../auth/blocs/sign_in_bloc/sign_in_bloc.dart';
-import '../widgets/navigator_bar_provider.dart';
+import '../providers/navigator_bar_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key,});
@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text('Bienvenido!', style: TextStyle(fontSize: 30,fontFamily: ''),),
+        title: Text('Bienvenido!', style: TextStyle(fontSize: 30),),
         actions: [
           IconButton(
             icon: Icon(Icons.logout),

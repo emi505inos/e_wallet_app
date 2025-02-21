@@ -1,8 +1,8 @@
 import 'package:e_wallet_app/screens/activity/activity_screen.dart'; 
-import 'package:e_wallet_app/screens/credit%20cards/views/credit_cards_creen.dart'; 
+import 'package:e_wallet_app/screens/credit%20cards/credit_cards_screen.dart'; 
 import 'package:e_wallet_app/screens/home/home_screen.dart'; 
 import 'package:e_wallet_app/screens/more/views/more_screen.dart';
-import 'package:e_wallet_app/screens/widgets/navigator_bar_provider.dart'; 
+import 'package:e_wallet_app/screens/providers/navigator_bar_provider.dart'; 
 import 'package:flutter/material.dart'; 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart'; 
@@ -71,7 +71,7 @@ class _CustomeNavigationBarState extends State<CustomeNavigationBar> {
             ), 
             onPressed: () { 
               controller.updataCurrentPage( 3 ); 
-              Navigator.push(context, MaterialPageRoute(builder: (context) => CreditCardsscreen())); 
+              Navigator.push(context, MaterialPageRoute(builder: (context) => CreditCardsScreen())); 
             }, 
           ), 
           IconButton( 

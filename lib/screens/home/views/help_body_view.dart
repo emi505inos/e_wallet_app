@@ -21,7 +21,7 @@ class HelpBodyView extends StatelessWidget {
                   width: 400,
                   height: 125,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30),
                     boxShadow: [
                       BoxShadow(
@@ -46,7 +46,7 @@ class HelpBodyView extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 23,
                                     fontWeight: FontWeight.w900, 
-                                    color: Color.fromRGBO(39, 37, 37, 1)
+                                    color: Theme.of(context).colorScheme.onSurface
                                   )
                                 ), 
                                 Text(
@@ -54,7 +54,7 @@ class HelpBodyView extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
-                                    color: Color.fromRGBO(39, 37, 37, 1)
+                                    color: Theme.of(context).colorScheme.onSurface
                                   )
                                 ),
                                 Text(
@@ -62,7 +62,7 @@ class HelpBodyView extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
-                                    color: Color.fromRGBO(39, 37, 37, 1)
+                                    color: Theme.of(context).colorScheme.onSurface
                                   ),
                                 ), 
                               ],

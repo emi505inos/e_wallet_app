@@ -25,7 +25,7 @@ Widget build(BuildContext context) {
                 style:TextStyle(
                   fontSize: 20, 
                   fontWeight: FontWeight.bold, 
-                  color: Color.fromRGBO(39, 37, 37, 1)
+                  color: Theme.of(context).colorScheme.onSurface
                 )
               ),
             ],
@@ -45,7 +45,7 @@ Widget build(BuildContext context) {
                     width: 350,
                     height: 150,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       borderRadius: BorderRadius.circular(30),
                       boxShadow: [
                         BoxShadow(
@@ -72,7 +72,7 @@ Widget build(BuildContext context) {
                                 style: TextStyle(
                                 fontSize: 23,
                                 fontWeight: FontWeight.w800, 
-                                color: Colors.black
+                                color: Theme.of(context).colorScheme.onSurface
                                 )
                               ),
                               Text(
@@ -104,7 +104,7 @@ Widget build(BuildContext context) {
                     width: 350,
                     height: 150,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       borderRadius: BorderRadius.circular(30),
                       boxShadow: [
                         BoxShadow(
@@ -115,7 +115,7 @@ Widget build(BuildContext context) {
                       ],
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(4.0),
                       child: Row(
                         children: [
                           Image.asset(
@@ -131,7 +131,7 @@ Widget build(BuildContext context) {
                                 style: TextStyle(
                                 fontSize: 23,
                                 fontWeight: FontWeight.w800, 
-                                color: Colors.black
+                                color: Theme.of(context).colorScheme.onSurface
                                 )
                               ),
                               Text(
@@ -163,7 +163,7 @@ Widget build(BuildContext context) {
                     width: 350,
                     height: 150,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       borderRadius: BorderRadius.circular(30),
                       boxShadow: [
                         BoxShadow(
@@ -174,7 +174,7 @@ Widget build(BuildContext context) {
                       ],
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(4.0),
                       child: Row(
                         children: [
                           Image.asset(
@@ -190,7 +190,7 @@ Widget build(BuildContext context) {
                                 style: TextStyle(
                                 fontSize: 23,
                                 fontWeight: FontWeight.w800, 
-                                color: Colors.black
+                                color: Theme.of(context).colorScheme.onSurface
                                 )
                               ),
                               Text(
