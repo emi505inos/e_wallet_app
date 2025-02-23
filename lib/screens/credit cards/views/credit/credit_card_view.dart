@@ -23,15 +23,18 @@ class CreditCardView extends StatelessWidget {
           color: Theme.of(context).colorScheme.primary,
         ),
         actions: [
-          IconButton(
-            onPressed: () {
-              
-            }, 
-            icon: Icon(
-              CupertinoIcons.question_circle,
-              size: 35,
-              color: Theme.of(context).colorScheme.primary,
-            ))
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: IconButton(
+              onPressed: () {
+                
+              }, 
+              icon: Icon(
+                CupertinoIcons.question_circle,
+                size: 35,
+                color: Theme.of(context).colorScheme.primary,
+              )),
+          )
         ],
       ),
       body: SingleChildScrollView(
