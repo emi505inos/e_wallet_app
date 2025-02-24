@@ -10,7 +10,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 
 import '../auth/blocs/sign_in_bloc/sign_in_bloc.dart';
-import '../providers/navigator_bar_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key,});

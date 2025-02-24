@@ -1,7 +1,6 @@
 import 'package:e_wallet_app/screens/credit%20cards/views/credit/views/bottom_view.dart';
 import 'package:e_wallet_app/screens/credit%20cards/views/credit/views/center_vew.dart';
 import 'package:e_wallet_app/screens/credit%20cards/views/credit/views/top_views.dart';
-import 'package:e_wallet_app/screens/widgets/custome_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
