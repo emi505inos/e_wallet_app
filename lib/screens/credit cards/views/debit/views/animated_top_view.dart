@@ -56,7 +56,6 @@ class _AnimatedTopViewState extends State<AnimatedTopView> with TickerProviderSt
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                // SizedBox(height: 30,),
                 Transform(
                   alignment: FractionalOffset.center,
                   transform: Matrix4.identity()
@@ -64,82 +63,78 @@ class _AnimatedTopViewState extends State<AnimatedTopView> with TickerProviderSt
                   ..rotateY(pi * _animation.value),
                   child: Container(
                     child: _animation.value <= 0.5
-                        ? Container(
-                          width: 240,
-                          height: 330,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Theme.of(context).colorScheme.primary,
+                    ? Container(
+                      width: 240,
+                      height: 330,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      child: Center(
+                        child: Text(
+                          '?',
+                          style: TextStyle(
+                            fontSize: 100,
+                            color: Colors.white
                           ),
-                          child: Center(
-                            child: Text(
-                              '?',
-                              style: TextStyle(
-                                fontSize: 100,
-                                color: Colors.white
-                              ),
+                        ),
+                      ),
+                    )
+                    : Container(
+                      width: 240,
+                      height: 330,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      child: Center(
+                        child: Transform.scale(
+                          scaleX: -1,
+                          child: Text(
+                            '?',
+                            style: TextStyle(
+                              fontSize: 100,
+                              color: Colors.white
                             ),
                           ),
-                        )
-                        : Column(
-                          children: [
-                            Container(
-                              width: 240,
-                              height: 330,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                color: Theme.of(context).colorScheme.primary,
-                              ),
-                              child: Center(
-                                child: Transform.scale(
-                                  scaleX: -1,
-                                  child: Text(
-                                    '?',
-                                    style: TextStyle(
-                                      fontSize: 100,
-                                      color: Colors.white
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(height: 20,),
-                            Transform.scale(
-                              scaleX: -1,
-                              child: InkWell(
-                                borderRadius: BorderRadius.circular(20),
-                                onTap: () {
-                                  
-                                },
-                                child: Ink(
-                                  height: 60,
-                                  width: 240,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    color: Theme.of(context).colorScheme.primary,
-                                  ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        'Copiar número',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          color: Theme.of(context).colorScheme.onPrimary
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                              
-                                ),
-                              ))
-                          ],
-                        ),  
+                        ),
+                      ),
+                    ),
                   )
                 ),
                 SizedBox(height: 20,),
+                Center(
+                  child: _animation.value <= 0.5
+                  ? null
+                  : InkWell(
+                    borderRadius: BorderRadius.circular(20),
+                    onTap: () {
+                      
+                    },
+                    child: Ink(
+                      height: 60,
+                      width: 240,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Copiar número',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.onPrimary
+                            ),
+                          ),
+                        ],
+                      ), 
+                    ),
+                  ) 
+                ),
                 TextButton(
                   onPressed: () {
                     if (_status == AnimationStatus.dismissed) {

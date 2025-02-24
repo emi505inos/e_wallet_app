@@ -12,7 +12,6 @@ class CreditCardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      bottomNavigationBar: CustomeNavigationBar(),
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.surface,
         leadingWidth: 76,
