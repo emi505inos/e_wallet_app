@@ -2,7 +2,6 @@ import 'package:e_wallet_app/screens/activity/views/acount_view.dart';
 import 'package:e_wallet_app/screens/activity/views/dollar_acount/views/dollar_center_body_view.dart';
 import 'package:e_wallet_app/screens/activity/views/dollar_acount/views/dollar_top_body_view.dart';
 import 'package:e_wallet_app/screens/widgets/custome_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DollarAcount extends StatelessWidget {

@@ -204,7 +204,7 @@ class _AnimatedTopViewState extends State<AnimatedTopView> with TickerProviderSt
                               ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
+                                // crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
                                     '5278',

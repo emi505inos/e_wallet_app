@@ -1,6 +1,5 @@
 import 'package:e_wallet_app/screens/activity/views/dollar_acount/dollar_acount.dart';
 import 'package:e_wallet_app/screens/activity/views/pesos_acount/pesos_acount.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../models/acount.dart';
