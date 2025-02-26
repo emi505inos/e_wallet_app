@@ -1,3 +1,6 @@
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/add_money_vew.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/jar_view.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/transfer_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -159,7 +162,7 @@ class PesosTopBodyView extends StatefulWidget {
                         InkWell(
                           borderRadius: BorderRadius.circular(25),
                           onTap: () {
-                            
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => TransferView()));
                           },
                           child: Ink(
                             height: 70,
@@ -199,7 +202,7 @@ class PesosTopBodyView extends StatefulWidget {
                         InkWell(
                           borderRadius: BorderRadius.circular(25),
                           onTap: () {
-                            
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => AddMoneyVew()));
                           },
                           child: Ink(
                             height: 70,
@@ -320,7 +323,7 @@ class PesosTopBodyView extends StatefulWidget {
               InkWell(
                 borderRadius: BorderRadius.circular(25),
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => JarView()));
                 },
                 child: Ink(
                   height: 100,
