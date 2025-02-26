@@ -1,3 +1,11 @@
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/add_money_vew.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/dollar_mep_view.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/jar_view.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/loan_view.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/phone_recharge_vew.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/resume_view.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/services_view.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/transfer_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -49,7 +57,7 @@ class ShortCutsView extends StatelessWidget {
               InkWell(
                 onTap: () {
                   
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AddMoneyVew()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(
@@ -82,7 +90,7 @@ class ShortCutsView extends StatelessWidget {
               SizedBox(width: 10,),
               InkWell(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ResumeView()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(
@@ -115,7 +123,7 @@ class ShortCutsView extends StatelessWidget {
               SizedBox(width: 10,),
               InkWell(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoanView()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(
@@ -148,7 +156,7 @@ class ShortCutsView extends StatelessWidget {
               SizedBox(width: 10,),
               InkWell(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => JarView()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(
@@ -186,7 +194,7 @@ class ShortCutsView extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ServicesView()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(
@@ -219,7 +227,7 @@ class ShortCutsView extends StatelessWidget {
               SizedBox(width: 10,),
               InkWell(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => TransferView()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(
@@ -252,7 +260,7 @@ class ShortCutsView extends StatelessWidget {
               SizedBox(width: 10,),
               InkWell(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PhoneRechargeVew()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(
@@ -285,7 +293,7 @@ class ShortCutsView extends StatelessWidget {
               SizedBox(width: 10,),
               InkWell(
                 onTap: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => DollarMepView()));
                 },
                 borderRadius: BorderRadius.circular(30),
                 child: Ink(

@@ -1,9 +1,9 @@
-import 'package:e_wallet_app/screens/home/views/body_view.dart';
-import 'package:e_wallet_app/screens/home/views/help_body_view.dart';
-import 'package:e_wallet_app/screens/home/views/home_body_view.dart';
-import 'package:e_wallet_app/screens/home/views/news_body_view.dart';
-import 'package:e_wallet_app/screens/home/views/promotions_view.dart';
-import 'package:e_wallet_app/screens/home/views/shortcuts_view.dart';
+import 'package:e_wallet_app/screens/home/views/bady%20view/body_view.dart';
+import 'package:e_wallet_app/screens/home/views/help%20body%20view/help_body_view.dart';
+import 'package:e_wallet_app/screens/home/views/home%20body%20view/home_body_view.dart';
+import 'package:e_wallet_app/screens/home/views/news%20body%20view/news_body_view.dart';
+import 'package:e_wallet_app/screens/home/views/promotions%20view/promotions_view.dart';
+import 'package:e_wallet_app/screens/home/views/shortcuts%20view/shortcuts_view.dart';
 import 'package:e_wallet_app/screens/widgets/custome_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
