@@ -18,7 +18,7 @@ class NewsBodyScreen extends StatelessWidget {
                   style:TextStyle(
                     fontSize: 20, 
                     fontWeight: FontWeight.bold, 
-                    color: Color.fromRGBO(39, 37, 37, 1)
+                    color: Theme.of(context).colorScheme.onSurface
                   )
                 ),
               ],
@@ -40,7 +40,7 @@ class NewsBodyScreen extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                color: Colors.white,
+                color: Theme.of(context).colorScheme.onPrimary,
                 borderRadius: BorderRadius.circular(30)
               ),
               child: Row(
@@ -56,14 +56,14 @@ class NewsBodyScreen extends StatelessWidget {
                       SizedBox(height: 20,),
                       Container(
                         decoration: BoxDecoration(
-                          color: Colors.deepOrange,
+                          color: Theme.of(context).colorScheme.secondary,
                           borderRadius: BorderRadius.circular(20)
                         ),
                         child: Text(
                           ' vuelta a clases ',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Colors.white
+                            color: Theme.of(context).colorScheme.onPrimary
                           ),
                         ),
                       ),
@@ -72,7 +72,7 @@ class NewsBodyScreen extends StatelessWidget {
                         style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold, 
-                        color: Colors.black
+                        color: Theme.of(context).colorScheme.onSurface
                         )
                       ),
                       Text(
@@ -80,25 +80,28 @@ class NewsBodyScreen extends StatelessWidget {
                         style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold, 
-                        color: Colors.black
+                        color: Theme.of(context).colorScheme.onSurface
                         )
                       ),
                       Text(
                         'Ahorrá al mango en esta',
                         style: TextStyle(
-                          fontWeight: FontWeight.w500
+                          fontWeight: FontWeight.w500,
+                          color: Theme.of(context).colorScheme.onSurface
                         ),
                       ),
                       Text(
                         'vuelta a clases pagando',
                         style: TextStyle(
-                          fontWeight: FontWeight.w500
+                          fontWeight: FontWeight.w500,
+                          color: Theme.of(context).colorScheme.onSurface
                         ),
                       ),
                       Text(
                         'con tu tarjeta de crédito.',
                         style: TextStyle(
-                          fontWeight: FontWeight.w500
+                          fontWeight: FontWeight.w500,
+                          color: Theme.of(context).colorScheme.onSurface
                         ),
                       ),
                     ],

@@ -36,7 +36,7 @@ class _HomeBodyViewState extends State<HomeBodyView> {
                 Text('Tu dinero', 
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.deepPurple[800], 
+                  color: Theme.of(context).colorScheme.primary, 
                   fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -49,7 +49,7 @@ class _HomeBodyViewState extends State<HomeBodyView> {
                     size: 22,
                   ), 
                   onPressed: _toglleIcon, 
-                  color: Colors.deepPurple[800],
+                  color: Theme.of(context).colorScheme.primary,
                   
                 )
               ],
@@ -76,7 +76,7 @@ class _HomeBodyViewState extends State<HomeBodyView> {
                         style: TextStyle(
                           fontSize: 40, 
                           fontWeight: FontWeight.bold,
-                          color: Color.fromRGBO(39, 37, 37, 1)
+                          color: Theme.of(context).colorScheme.onSurface
                         ),
                       ),
                       IconButton(onPressed: () {
@@ -90,7 +90,7 @@ class _HomeBodyViewState extends State<HomeBodyView> {
                     'USD $_displayText1', 
                     style: TextStyle(
                       fontSize: 30, 
-                      color: Color.fromRGBO(39, 37, 37, 1)
+                      color: Theme.of(context).colorScheme.onSurface
       
                     )
                   )

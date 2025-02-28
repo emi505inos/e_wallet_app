@@ -30,7 +30,7 @@ class ShortCutsView extends StatelessWidget {
                       style:TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
-                        color: Color.fromRGBO(39, 37, 37, 1)
+                        color: Theme.of(context).colorScheme.onSurface
                       ) 
                     ,)
                   ],
@@ -44,7 +44,7 @@ class ShortCutsView extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: Colors.deepPurple[800]
+                      color: Theme.of(context).colorScheme.primary
                     ),
                   ))
               ]
@@ -71,14 +71,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.circleDollarToSlot, size: 40, color: Colors.deepPurple[800],),
+                      FaIcon(
+                        FontAwesomeIcons.circleDollarToSlot, 
+                        size: 40, 
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
                       SizedBox(height: 10,),
                       Text('Agregar'),
                       Text('dinero')
@@ -104,14 +108,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.fileLines, size: 40,color: Colors.deepPurple[800]),
+                      FaIcon(
+                        FontAwesomeIcons.fileLines, 
+                        size: 40,
+                        color: Theme.of(context).colorScheme.primary
+                      ),
                       SizedBox(height: 10,),
                       Text('Ver'),
                       Text('resúmenes')
@@ -137,14 +145,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.handHoldingDollar, size: 40,color: Colors.deepPurple[800]),
+                      FaIcon(
+                        FontAwesomeIcons.handHoldingDollar, 
+                        size: 40,
+                        color: Theme.of(context).colorScheme.primary
+                      ),
                       SizedBox(height: 10,),
                       Text('Pedir'),
                       Text('préstamo')
@@ -170,14 +182,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.jar, size: 40,color: Colors.deepPurple[800]),
+                      FaIcon(
+                        FontAwesomeIcons.jar, 
+                        size: 40,
+                        color: Theme.of(context).colorScheme.primary
+                      ),
                       SizedBox(height: 10,),
                       Text('Crear'),
                       Text('Frascos')
@@ -208,14 +224,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.fileInvoiceDollar, size: 40,color: Colors.deepPurple[800]),
+                      FaIcon(
+                        FontAwesomeIcons.fileInvoiceDollar, 
+                        size: 40,
+                        color: Theme.of(context).colorScheme.primary
+                      ),
                       SizedBox(height: 10,),
                       Text('Pagar'),
                       Text('Servicios')
@@ -241,14 +261,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.moneyBillTransfer, size: 40,color: Colors.deepPurple[800]),
+                      FaIcon(
+                        FontAwesomeIcons.moneyBillTransfer, 
+                        size: 40,
+                        color: Theme.of(context).colorScheme.primary
+                      ),
                       SizedBox(height: 10,),
                       Text('Transferir'),
                       Text('pesos')
@@ -274,14 +298,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.mobileScreen, size: 40,color: Colors.deepPurple[800]),
+                      FaIcon(
+                        FontAwesomeIcons.mobileScreen, 
+                        size: 40,
+                        color: Theme.of(context).colorScheme.primary
+                      ),
                       SizedBox(height: 10,),
                       Text('Hacer'),
                       Text('Recargas')
@@ -307,14 +335,18 @@ class ShortCutsView extends StatelessWidget {
                         spreadRadius: 1,
                       )
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     borderRadius: BorderRadius.circular(30)
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(height: 10,),
-                      FaIcon(FontAwesomeIcons.moneyBill1Wave, size: 40,color: Colors.deepPurple[800]),
+                      FaIcon(
+                        FontAwesomeIcons.moneyBill1Wave, 
+                        size: 40,
+                        color: Theme.of(context).colorScheme.primary
+                      ),
                       SizedBox(height: 10,),
                       Text('Operar'),
                       Text('dolar MEP')
