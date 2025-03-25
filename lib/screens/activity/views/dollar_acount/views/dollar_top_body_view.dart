@@ -1,6 +1,10 @@
+import 'package:e_wallet_app/screens/activity/views/dollar_acount/views/views/alias_cbu_dollar.dart';
+import 'package:e_wallet_app/screens/activity/views/dollar_acount/views/views/transfer_dollar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../../../../home/views/shortcuts view/views/dollar_mep_view.dart';
 
 class DollarTopBodyView extends StatefulWidget {
   const DollarTopBodyView({super.key});
@@ -79,7 +83,7 @@ class DollarTopBodyView extends StatefulWidget {
                               ),
                               TextButton(
                                 onPressed: () {
-                                  
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => AliasCbuDollarView()));
                                 }, 
                                 child: Text(
                                   'Alias y CBU',
@@ -122,7 +126,7 @@ class DollarTopBodyView extends StatefulWidget {
                         InkWell(
                           borderRadius: BorderRadius.circular(25),
                           onTap: () {
-                            
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => TransferDollarView()));
                           },
                           child: Ink(
                             height: 70,
@@ -163,7 +167,7 @@ class DollarTopBodyView extends StatefulWidget {
                         InkWell(
                           borderRadius: BorderRadius.circular(25),
                           onTap: () {
-                            
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => DollarMepView()));
                           },
                           child: Ink(
                             height: 70,

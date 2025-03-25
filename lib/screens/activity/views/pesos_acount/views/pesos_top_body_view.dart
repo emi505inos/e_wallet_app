@@ -1,3 +1,5 @@
+import 'package:e_wallet_app/screens/activity/views/pesos_acount/views/view/alias_cbu.dart';
+import 'package:e_wallet_app/screens/activity/views/pesos_acount/views/view/withdraw.dart';
 import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/add_money_vew.dart';
 import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/jar_view.dart';
 import 'package:e_wallet_app/screens/home/views/shortcuts%20view/views/transfer_view.dart';
@@ -82,7 +84,7 @@ class PesosTopBodyView extends StatefulWidget {
                               ),
                               TextButton(
                                 onPressed: () {
-                                  
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => AliasCbuView()));
                                 }, 
                                 child: Text(
                                   'Alias y CBU',
@@ -152,7 +154,7 @@ class PesosTopBodyView extends StatefulWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 10,),
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Row(
@@ -242,7 +244,7 @@ class PesosTopBodyView extends StatefulWidget {
                         InkWell(
                           borderRadius: BorderRadius.circular(25),
                           onTap: () {
-                            
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => WithdrawMoneyView()));
                           },
                           child: Ink(
                             height: 70,
